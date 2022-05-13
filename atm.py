@@ -1,6 +1,7 @@
 users = ["Boakai","Fatu"]
 passwords = ["passwordBoakai", "passwordFatu"]
 user_account_balance = [490, 200]
+withdrawal_amount = 0
 
 # prompt user to enter username 
 user = input("Enter username \n")
@@ -26,7 +27,11 @@ if(user in users):
         print(selected_option)
 
         if(selected_option == 1):
-            
+            withdrawal_amount = int(input("How much do you want to withdraw?\n"))
+            if(withdrawal_amount > user_account_balance[user_index]):
+                print("You cant withdraw this amount, your balance is low")
+            else:
+                print("Congratulation, you have withdraw from your account")
             print("Withdraw")
         elif(selected_option == 2):
             print("Saving")
