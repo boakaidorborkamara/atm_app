@@ -1,5 +1,6 @@
 users = ["Boakai","Fatu"]
 passwords = ["passwordBoakai", "passwordFatu"]
+user_account_balance = [490, 200]
 
 # prompt user to enter username 
 user = input("Enter username \n")
@@ -25,6 +26,7 @@ if(user in users):
         print(selected_option)
 
         if(selected_option == 1):
+            
             print("Withdraw")
         elif(selected_option == 2):
             print("Saving")
