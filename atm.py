@@ -36,4 +36,4 @@ if(user in users):
     else:
         print("Password not correct")
 else:
-    print("Sorry, username is not commrect.")
+    print("Sorry, username is not correct.")
